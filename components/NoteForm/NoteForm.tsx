@@ -22,7 +22,8 @@ export default function NoteForm() {
     },
   });
 
-  const handleSubmit = () => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     mutation.mutate(draft);
   };
 
