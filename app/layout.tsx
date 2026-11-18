@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: 'https://08-zustand-ecru-three.vercel.app',
     images: [
       {
-        url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg ',
+        url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
         width: 1200,
         height: 630,
         alt: 'NoteHub - A simple and efficient app for creating and organazing your notes.',
