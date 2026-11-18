@@ -35,14 +35,14 @@ export default function NoteForm() {
   };
 
   return (
-    <form className={css.form}>
+    <form className={css.form} action={handleSubmit}>
       <div className={css.formGroup}>
         <label htmlFor="title">Title</label>
         <input
           id="title"
           type="text"
           name="title"
-          defaultValue={draft.title}
+          value={draft.title}
           className={css.input}
           onChange={handleChange}
         />
@@ -54,7 +54,7 @@ export default function NoteForm() {
           id="content"
           name="content"
           rows={8}
-          defaultValue={draft.content}
+          value={draft.content}
           className={css.textarea}
           onChange={handleChange}
         />
@@ -65,7 +65,7 @@ export default function NoteForm() {
         <select
           id="tag"
           name="tag"
-          defaultValue={draft.tag}
+          value={draft.tag}
           className={css.select}
           onChange={handleChange}
         >
@@ -85,7 +85,6 @@ export default function NoteForm() {
           type="submit"
           className={css.submitButton}
           disabled={mutation.isPending}
-          formAction={handleSubmit}
         >
           Create note
         </button>
